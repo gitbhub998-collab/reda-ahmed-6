@@ -189,6 +189,53 @@
 	}
 }
 
+.hero-full-name {
+	margin: 18px 0 0;
+	color: #c6d7d3;
+	font-family: 'DM Sans', sans-serif;
+	font-size: clamp(18px, 2vw, 25px);
+	line-height: 1.5;
+}
+
+.about-facts a,
+.footer-link {
+	color: #9fd1d0;
+	font: 500 11px var(--mono);
+	text-decoration: none;
+}
+
+.about-facts a:hover,
+.footer-link:hover {
+	color: var(--red);
+}
+
+.credentials-title {
+	margin-top: 64px;
+	padding-top: 28px;
+	border-top: 1px solid #aab2a9;
+}
+
+@media (max-width: 760px) {
+	.skills .skill-row {
+		grid-template-columns: 34px minmax(0, 1fr);
+		gap: 8px 14px;
+	}
+
+	.skills .skill-row strong {
+		min-width: 0;
+		overflow-wrap: anywhere;
+	}
+
+	.skills .skill-row small {
+		grid-column: 2;
+		padding: 0 0 4px;
+	}
+
+	.about-facts div {
+		gap: 12px;
+	}
+}
+
 .section-head,
 .section-kicker,
 .service-head > span,
